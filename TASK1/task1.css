@@ -1,0 +1,308 @@
+@font-face {
+    font-family: 'Protest Guerrilla';
+    src: url('/path/to/fonts/ProtestGuerrilla-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+}
+
+body {
+    background-color: #e9e9e9;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+}
+
+.logo img {
+    padding-top: 30px;
+    max-width: 100px;
+    height: auto;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-links li {
+    padding: 10px 20px;
+    font-family: jose;
+    font-size: 18px;
+    cursor: pointer;
+    color: #000000;
+}
+
+
+.title1 {
+    font-family: "Protest Guerrilla";
+    font-size: 80px;
+    color: #000000;
+}
+
+h1 {
+    font-family: "Protest Guerrilla";
+    font-size: 48px;
+}
+
+h3 {
+    font-family: "Josefin Sans";
+}
+
+h4 {
+    font-family: "Josefin Sans";
+}
+
+h5 {
+    font-family: "Josefin Sans";
+}
+
+.h1-1 {
+    display: block;
+    text-align: left;
+    margin: 0; /* Remove any default margins */
+    font-family: "Protest Guerrilla";
+    font-size: 48px;
+    color: #000000;
+}
+.content-1 {
+    background-color: #ffffff;
+    margin: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    height: fit-content;
+    border-radius: 15px;
+    box-shadow: #3C0919 200px;
+}
+
+.subc-1 {
+    padding-left: 50px;
+    margin: 50px;
+}
+
+.content-grid {
+    column-count: 3;
+    margin-top: 50px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 15px;
+}
+
+.content-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+.f-album{
+    height: 500px
+}
+
+.album-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;    
+    gap: 0;
+
+}
+
+.album-grid img{
+    height: 250px;
+    width: 204px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    font-size: 16px;
+    padding-left: 100px;
+    color: #000000;
+}
+
+h2{
+    font-family: "Protest Guerrilla";
+    font-size: 48px;
+    text-align: center;
+    color: #000000;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Push text to the left, image to the right */
+    padding: 20px;
+    margin-top: 20px;
+    color: #000000;
+    font-size: 16px;
+}
+
+h6 {
+    width: 100%;
+    text-align: center;
+    font-size: 29px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Josefin Sans";
+}
+
+.author p {
+    flex: 1; /* Allows the text to take remaining space */
+    margin-right: 20px; /* Add space between text and image */
+    text-align: left;
+}
+
+.author img {
+    width: 200px; /* Set a manageable width for the profile picture */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.author-text {
+    max-width: 60%;
+    font-size: 16px;
+}
+
+footer{
+    text-align: center;
+    background-color: #000000;
+    color: white;
+}
+
+@media (max-width: 540px) {
+    .logo img {
+        width: 80px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-1 {
+        margin: 12px;
+        padding: 12px;
+    }
+
+    .author {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .author img {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .album-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 540px) {
+    .logo img {
+        width: 80px;
+    }
+
+    .content-1 {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .content-grid {
+        column-count: 1;
+    }
+}
+
+@media (min-width: 720px) {
+    .logo img {
+        width: 80px;
+    }
+
+    .content-1 {
+        margin: 30px;
+        padding: 30px;
+    }
+
+    .content-grid {
+        column-count: 2;
+    }
+
+    .album-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet-specific style: Align author section to the left */
+@media (min-width: 540px) and (max-width: 1024px) {
+    h6 {
+        text-align: left;
+        padding-left: 20px; /* Add some padding if needed */
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo img {
+        width: 200px;
+    }
+
+    .nav-links li {
+        margin: 0 20px;
+    }
+
+    .content-1 {
+        margin: 50px;
+        padding: 50px;
+    }
+
+    .title1 {
+        font-size: 80px;
+    }
+
+    .content-grid {
+        column-count: 3;
+    }
+
+    .f-album {
+        height: 500px;
+    }
+
+    .album-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Logo size for desktop */
+@media (min-width: 1024px) {
+    .logo img {
+        width: 200px; /* Logo width for desktop */
+    }
+}
+
+/* Logo size for mobile and tablet */
+@media (max-width: 1024px) {
+    .logo img {
+        width: 80px; /* Logo width for mobile and tablet */
+    }
+}
